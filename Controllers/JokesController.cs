@@ -33,6 +33,12 @@ namespace The_Comedy_Chronicle.Controllers
             return View();
         }
 
+        // POST: Jokes/ShowSearchResult
+        public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
+        {
+            return View("Index", await _context.Joke.ToListAsync());
+        }
+
         // GET: Jokes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
