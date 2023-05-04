@@ -7,5 +7,10 @@
         public string jokeQuestion { get; set; }
 
         public  string jokeAnswer { get; set; }
+
+        public Joke()
+        {
+            
+        }
     }
 }
